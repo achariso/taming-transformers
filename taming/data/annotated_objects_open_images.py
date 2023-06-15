@@ -4,8 +4,8 @@ from pathlib import Path
 from typing import Dict, List, Any
 import warnings
 
-from ants.taming.taming.data.annotated_objects_dataset import AnnotatedObjectsDataset
-from ants.taming.taming.data.helper_types import Annotation, Category
+from ants.libs.taming.taming.data.annotated_objects_dataset import AnnotatedObjectsDataset
+from ants.libs.taming.taming.data.helper_types import Annotation, Category
 from tqdm import tqdm
 
 OPEN_IMAGES_STRUCTURE = {

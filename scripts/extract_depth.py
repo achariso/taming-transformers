@@ -83,7 +83,7 @@ def save_depth(dataset, path, debug=False):
 
 
 if __name__ == "__main__":
-    from ants.taming.taming.data.imagenet import ImageNetTrain, ImageNetValidation
+    from ants.libs.taming.taming.data.imagenet import ImageNetTrain, ImageNetValidation
     out = "data/imagenet_depth"
     if not os.path.exists(out):
         print("Please create a folder or symlink '{}' to extract depth data ".format(out) +

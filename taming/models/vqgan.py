@@ -4,10 +4,10 @@ import pytorch_lightning as pl
 
 from main import instantiate_from_config
 
-from ants.taming.taming.modules.diffusionmodules.model import Encoder, Decoder
-from ants.taming.taming.modules.vqvae.quantize import VectorQuantizer2 as VectorQuantizer
-from ants.taming.taming.modules.vqvae.quantize import GumbelQuantize
-from ants.taming.taming.modules.vqvae.quantize import EMAVectorQuantizer
+from ants.libs.taming.taming.modules.diffusionmodules.model import Encoder, Decoder
+from ants.libs.taming.taming.modules.vqvae.quantize import VectorQuantizer2 as VectorQuantizer
+from ants.libs.taming.taming.modules.vqvae.quantize import GumbelQuantize
+from ants.libs.taming.taming.modules.vqvae.quantize import EMAVectorQuantizer
 
 class VQModel(pl.LightningModule):
     def __init__(self,

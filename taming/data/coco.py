@@ -6,7 +6,7 @@ from PIL import Image
 from tqdm import tqdm
 from torch.utils.data import Dataset
 
-from ants.taming.taming.data.sflckr import SegmentationBase # for examples included in repo
+from ants.libs.taming.taming.data.sflckr import SegmentationBase # for examples included in repo
 
 
 class Examples(SegmentationBase):

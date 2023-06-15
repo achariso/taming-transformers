@@ -14,10 +14,10 @@ from torchvision.utils import save_image
 from tqdm import tqdm
 
 from scripts.make_samples import get_parser, load_model_and_dset
-from ants.taming.taming.data.conditional_builder.objects_center_points import ObjectsCenterPointsConditionalBuilder
-from ants.taming.taming.data.helper_types import BoundingBox, Annotation
-from ants.taming.taming.data.annotated_objects_dataset import AnnotatedObjectsDataset
-from ants.taming.taming.models.cond_transformer import Net2NetTransformer
+from ants.libs.taming.taming.data.conditional_builder.objects_center_points import ObjectsCenterPointsConditionalBuilder
+from ants.libs.taming.taming.data.helper_types import BoundingBox, Annotation
+from ants.libs.taming.taming.data.annotated_objects_dataset import AnnotatedObjectsDataset
+from ants.libs.taming.taming.models.cond_transformer import Net2NetTransformer
 
 seed_everything(42424242)
 device: Literal['cuda', 'cpu'] = 'cuda'

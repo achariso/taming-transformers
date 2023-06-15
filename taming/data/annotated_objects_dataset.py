@@ -7,11 +7,11 @@ from torch import Tensor
 from torch.utils.data import Dataset
 from torchvision import transforms
 
-from ants.taming.taming.data.conditional_builder.objects_bbox import ObjectsBoundingBoxConditionalBuilder
-from ants.taming.taming.data.conditional_builder.objects_center_points import ObjectsCenterPointsConditionalBuilder
-from ants.taming.taming.data.conditional_builder.utils import load_object_from_string
-from ants.taming.taming.data.helper_types import BoundingBox, CropMethodType, Image, Annotation, SplitType
-from ants.taming.taming.data.image_transforms import CenterCropReturnCoordinates, RandomCrop1dReturnCoordinates, \
+from ants.libs.taming.taming.data.conditional_builder.objects_bbox import ObjectsBoundingBoxConditionalBuilder
+from ants.libs.taming.taming.data.conditional_builder.objects_center_points import ObjectsCenterPointsConditionalBuilder
+from ants.libs.taming.taming.data.conditional_builder.utils import load_object_from_string
+from ants.libs.taming.taming.data.helper_types import BoundingBox, CropMethodType, Image, Annotation, SplitType
+from ants.libs.taming.taming.data.image_transforms import CenterCropReturnCoordinates, RandomCrop1dReturnCoordinates, \
     Random2dCropReturnCoordinates, RandomHorizontalFlipReturn, convert_pil_to_tensor
 
 

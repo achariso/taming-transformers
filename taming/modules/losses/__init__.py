@@ -1,2 +1,2 @@
-from ants.taming.taming.modules.losses.vqperceptual import DummyLoss
+from ants.libs.taming.taming.modules.losses.vqperceptual import DummyLoss
 
